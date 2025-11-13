@@ -1,6 +1,4 @@
-package com.example.order_service.dto;
-
-import java.math.BigDecimal;
+package com.example.inventory_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,10 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderItemDto {
+public class InventoryResponseDto {
     
     private String skuCode;
-    private Integer quantity;
-    private BigDecimal price;  
-
+    private boolean inStock; 
 }
